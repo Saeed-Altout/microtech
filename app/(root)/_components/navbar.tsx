@@ -22,7 +22,7 @@ export const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="fixed top-0 bg-background w-full h-16 border-b shadow-sm flex justify-between items-center">
+    <div className="fixed top-0 z-[10000] bg-background w-full h-16 border-b shadow-sm flex justify-between items-center">
       <div className="flex items-center justify-between w-full max-w-screen-xl mx-auto px-4">
         <Logo className="w-32" />
         <NavigationMenu className="hidden md:block">
