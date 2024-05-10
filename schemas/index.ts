@@ -11,3 +11,12 @@ export const registerForm = z.object({
     message: "Password is required",
   }),
 });
+
+export const loginForm = z.object({
+  email: z.string().email({
+    message: "Email is required",
+  }),
+  password: z.string().min(2, {
+    message: "Password is required",
+  }),
+});
