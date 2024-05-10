@@ -1,9 +1,11 @@
-import { Hero } from "./_components/hero";
+import { HeroSection } from "./_components/hero";
+import { StartProjectSection } from "./_components/start-project";
 
 export default function HomePage() {
   return (
     <div>
-      <Hero />
+      <HeroSection />
+      <StartProjectSection />
     </div>
   );
 }

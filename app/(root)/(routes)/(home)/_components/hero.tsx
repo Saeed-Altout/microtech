@@ -5,7 +5,7 @@ import { BsFacebook, BsLinkedin, BsTelegram } from "react-icons/bs";
 
 import { Button } from "@/components/ui/button";
 
-export const Hero = () => {
+export const HeroSection = () => {
   return (
     <div className="w-full max-w-screen-xl mx-auto px-4 pt-10 pb-20">
       <div className="flex justify-center items-center gap-16 flex-wrap">
