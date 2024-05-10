@@ -46,12 +46,12 @@ export const Navbar = () => {
         </NavigationMenu>
 
         <Sheet>
-          <SheetTrigger className="block md:hidden">
-            <Button size="icon" variant="outline">
+          <Button size="icon" variant="outline" asChild>
+            <SheetTrigger className="block md:hidden">
               <span className="sr-only">Menu</span>
               <Menu className="h-5 w-5" />
-            </Button>
-          </SheetTrigger>
+            </SheetTrigger>
+          </Button>
           <SheetContent>
             <NavigationMenu>
               <NavigationMenuList className="flex-col space-x-0 items-start space-y-2">
