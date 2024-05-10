@@ -9,7 +9,7 @@ import { Logo } from "@/components/common/logo";
 export const Footer = () => {
   return (
     <div className="border-t w-full py-10">
-      <div className="space-y-5 w-full max-w-screen-xl mx-auto">
+      <div className="space-y-5 w-full max-w-screen-xl mx-auto px-4">
         <div className="flex justify-center items-center flex-col gap-10 md:justify-between md:flex-row">
           <Logo className="w-32" />
           <div className="flex items-center gap-5 w-fit px-8 py-2 border border-dashed rounded-md">
