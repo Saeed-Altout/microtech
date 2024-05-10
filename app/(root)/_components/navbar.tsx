@@ -17,6 +17,7 @@ import { Logo } from "@/components/common/logo";
 
 import { routes } from "@/config/site";
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -42,6 +43,10 @@ export const Navbar = () => {
                 </Link>
               </NavigationMenuItem>
             ))}
+
+            <Button size="sm" asChild>
+              <Link href="/auth/login">Login</Link>
+            </Button>
           </NavigationMenuList>
         </NavigationMenu>
 
@@ -53,7 +58,7 @@ export const Navbar = () => {
             </SheetTrigger>
           </Button>
           <SheetContent>
-            <NavigationMenu>
+            <NavigationMenu className="flex flex-col justify-between h-full items-start">
               <NavigationMenuList className="flex-col space-x-0 items-start space-y-2">
                 {routes.map(({ label, href, pathname: path }, index) => (
                   <NavigationMenuItem key={index}>
@@ -71,6 +76,12 @@ export const Navbar = () => {
                   </NavigationMenuItem>
                 ))}
               </NavigationMenuList>
+              <div className="flex flex-col gap-y-5">
+                <Button size="sm" asChild>
+                  <Link href="/auth/login">Login</Link>
+                </Button>
+                <ModeToggle />
+              </div>
             </NavigationMenu>
           </SheetContent>
         </Sheet>

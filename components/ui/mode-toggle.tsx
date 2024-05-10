@@ -10,7 +10,7 @@ export function ModeToggle() {
   const { setTheme } = useTheme();
 
   return (
-    <div className="border rounded-md overflow-hidden">
+    <div className="border rounded-md overflow-hidden bg-background">
       <Button
         onClick={() => setTheme("system")}
         variant="ghost"
