@@ -1,10 +1,12 @@
-import { AboutSection } from "./_components/about";
-import { ContactSection } from "./_components/contact";
-import { HeroSection } from "./_components/hero";
-import { ServicesSection } from "./_components/services";
-import { StartProjectSection } from "./_components/start-project";
-
 import type { Metadata } from "next";
+
+import {
+  AboutSection,
+  ContactSection,
+  HeroSection,
+  ServicesSection,
+  StartProjectSection,
+} from "./_components";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -13,12 +15,12 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div>
+    <>
       <HeroSection />
       <StartProjectSection />
       <AboutSection />
       <ServicesSection />
       <ContactSection />
-    </div>
+    </>
   );
 }
