@@ -69,3 +69,28 @@ export const services = [
       "Building applications that stand out, meet user needs, and drive business growth.",
   },
 ];
+
+export const inquiry = [
+  "Building And Designing A Project",
+  "General Inquiry",
+  "Project Consultation",
+  "Technical Support",
+  "Partnership Opportunities",
+  "Feedback and Suggestions",
+  "Bug Report",
+  "Custom Development Request",
+  "Training and Workshops",
+  "Employment Opportunities/Careers",
+  "Other",
+];
+
+export const media = [
+  "Search Engine (e.g., Google, Bing)",
+  "Social Media (Specify platform, e.g., LinkedIn, Twitter)",
+  "Referral from a Friend or Colleague",
+  "Online Advertisement",
+  "Blog or Online Article",
+  "Email Newsletter",
+  "Print Advertisement (Specify publication if applicable)",
+  "Other",
+];

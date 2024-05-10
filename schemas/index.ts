@@ -20,3 +20,15 @@ export const loginForm = z.object({
     message: "Password is required",
   }),
 });
+
+export const contactSchema = z.object({
+  full_name: z.string().min(2, {
+    message: "Full Name is required",
+  }),
+  email: z.string().min(2, {
+    message: "Email is required",
+  }),
+  inquiry_type: z.string(),
+  reaching_way: z.string(),
+  message: z.string(),
+});
