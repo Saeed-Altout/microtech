@@ -10,7 +10,7 @@ export const HeroSection = () => {
     <div id="hero" className="w-full max-w-screen-xl mx-auto px-4 pt-10 pb-20">
       <div className="flex justify-center items-center gap-16 flex-wrap">
         <div className="flex flex-col gap-y-5 max-w-5xl flex-1">
-          <h1 className="font-medium md:font-semibold tracking-wide text-4xl md:text-5xl lg:text-6xl xl:text-7xl md:!leading-[60px] lg:!leading-[70px] xl:!leading-[85px]">
+          <h1 className="font-medium md:font-semibold tracking-wide text-4xl md:text-5xl lg:text-6xl  md:!leading-[60px] lg:!leading-[70px] xl:!leading-[85px]">
             Crafting Innovative Digital Solutions.
           </h1>
           <p>
