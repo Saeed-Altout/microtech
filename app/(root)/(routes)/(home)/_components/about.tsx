@@ -5,7 +5,7 @@ import { FeatureCard } from "@/components/card/feature-card";
 
 export const AboutSection = () => {
   return (
-    <div className="w-full max-w-screen-xl mx-auto px-4 py-20">
+    <div id="about" className="w-full max-w-screen-xl mx-auto px-4 py-20">
       <Heading
         title="Who is MicroTech ?"
         description="MicroTech is a leading software company specializing in web and app development, as well as UI/UX design."

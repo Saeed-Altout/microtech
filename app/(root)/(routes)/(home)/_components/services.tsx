@@ -5,7 +5,10 @@ import { Heading } from "@/components/common/heading";
 
 export const ServicesSection = () => {
   return (
-    <div className="bg-secondary dark:bg-primary-foreground w-full py-20">
+    <div
+      id="services"
+      className="bg-secondary dark:bg-primary-foreground w-full py-20"
+    >
       <div className="w-full max-w-screen-xl mx-auto px-4">
         <Heading
           title="Services"

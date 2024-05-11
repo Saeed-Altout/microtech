@@ -15,10 +15,20 @@ export const routes = [
     href: "/",
     pathname: "/",
   },
+  // {
+  //   label: "contact us",
+  //   href: "/contact-us",
+  //   pathname: "/contact-us",
+  // },
   {
-    label: "contact us",
-    href: "/contact-us",
-    pathname: "/contact-us",
+    label: "about",
+    href: "/#about",
+    pathname: "/#about",
+  },
+  {
+    label: "services",
+    href: "/#services",
+    pathname: "/#services",
   },
 ];
 
