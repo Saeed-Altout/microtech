@@ -44,9 +44,9 @@ export const Navbar = () => {
               </NavigationMenuItem>
             ))}
 
-            <Button size="sm" asChild>
+            {/* <Button size="sm" asChild>
               <Link href="/auth/login">Login</Link>
-            </Button>
+            </Button> */}
           </NavigationMenuList>
         </NavigationMenu>
 
@@ -77,9 +77,9 @@ export const Navbar = () => {
                 ))}
               </NavigationMenuList>
               <div className="flex flex-col gap-y-5">
-                <Button size="sm" asChild>
+                {/* <Button size="sm" asChild>
                   <Link href="/auth/login">Login</Link>
-                </Button>
+                </Button> */}
                 <ModeToggle />
               </div>
             </NavigationMenu>
