@@ -1,8 +1,13 @@
+"use client";
+
 import { ArrowUpRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { useAddBookNow } from "@/hooks/use-add-book-now";
 
 export const StartProjectSection = () => {
+  const addBookNowModal = useAddBookNow();
+
   return (
     <div
       id="start-project"
@@ -20,7 +25,7 @@ export const StartProjectSection = () => {
         </p>
         <div className="bg-background px-8 py-3 rounded-md flex items-center justify-center flex-wrap gap-5 w-fit mx-auto mt-8">
           <p className="text-sm">Let&apos;s start your project now!</p>
-          <Button>
+          <Button onClick={() => addBookNowModal.onOpen()}>
             Start project now <ArrowUpRight className="h-4 w-4 ml-2" />
           </Button>
         </div>

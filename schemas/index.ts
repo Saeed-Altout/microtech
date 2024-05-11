@@ -32,3 +32,13 @@ export const contactSchema = z.object({
   reaching_way: z.string(),
   message: z.string(),
 });
+
+export const bookNowSchema = z.object({
+  full_name: z.string().min(2, {
+    message: "Full Name is required",
+  }),
+  email: z.string().min(2, {
+    message: "Email is required",
+  }),
+  message: z.string(),
+});

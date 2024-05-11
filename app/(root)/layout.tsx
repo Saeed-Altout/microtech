@@ -1,6 +1,8 @@
 import { Navbar } from "./_components/navbar";
 import { Footer } from "./_components/footer";
 
+import { AddBookNowProvider } from "@/providers/add-book-now-provider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -11,7 +13,9 @@ export default function RootLayout({
       <header>
         <Navbar />
       </header>
-      <main className="flex-1 pt-16">{children}</main>
+      <main className="flex-1 pt-16">
+        {children} <AddBookNowProvider />
+      </main>
       <footer>
         <Footer />
       </footer>
