@@ -22,7 +22,7 @@ export const HeroSection = () => {
           </p>
           <div className="flex items-center gap-x-2">
             <Button asChild>
-              <Link href="/contact-us">
+              <Link href="/#contact-us">
                 Get started <ArrowUpRight className="h-4 w-4 ml-2" />
               </Link>
             </Button>
