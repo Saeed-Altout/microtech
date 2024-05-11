@@ -32,11 +32,7 @@ export const Navbar = () => {
               <NavigationMenuItem key={index}>
                 <Link href={href} legacyBehavior passHref>
                   <NavigationMenuLink
-                    className={cn(
-                      "capitalize",
-                      navigationMenuTriggerStyle(),
-                      path === pathname && "font-semibold"
-                    )}
+                    className={cn("capitalize", navigationMenuTriggerStyle())}
                   >
                     {label}
                   </NavigationMenuLink>
@@ -66,8 +62,7 @@ export const Navbar = () => {
                       <NavigationMenuLink
                         className={cn(
                           "capitalize",
-                          navigationMenuTriggerStyle(),
-                          path === pathname && "font-semibold"
+                          navigationMenuTriggerStyle()
                         )}
                       >
                         {label}
