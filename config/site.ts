@@ -1,6 +1,11 @@
 import mobile from "@/public/mobile.svg";
 import web from "@/public/web.svg";
 import uiux from "@/public/ui&ux.svg";
+
+import mobileDark from "@/public/mobile-dark.svg";
+import webDark from "@/public/web-dark.svg";
+import uiuxDark from "@/public/ui&ux-dark.svg";
+
 import { CheckCircle, Goal, Hand, Stars } from "lucide-react";
 
 export const siteConfig = {
@@ -74,6 +79,27 @@ export const services = [
   },
   {
     icon: mobile,
+    title: "Application Development",
+    description:
+      "Building applications that stand out, meet user needs, and drive business growth.",
+  },
+];
+
+export const servicesDark = [
+  {
+    icon: webDark,
+    title: "Website Development",
+    description:
+      "Creating stunning and functional websites that represent your brand and drive results.",
+  },
+  {
+    icon: uiuxDark,
+    title: "UX & UI Design",
+    description:
+      "Crafting seamless and user-friendly experiences that captivate your audience.",
+  },
+  {
+    icon: mobileDark,
     title: "Application Development",
     description:
       "Building applications that stand out, meet user needs, and drive business growth.",
