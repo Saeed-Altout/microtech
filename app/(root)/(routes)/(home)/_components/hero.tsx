@@ -7,10 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export const HeroSection = () => {
   return (
-    <section
-      id="hero"
-      className="container pt-10 pb-20 h-screen flex justify-center items-center"
-    >
+    <section id="hero" className="container pt-10 pb-20">
       <div className="flex justify-center items-center gap-16 flex-wrap">
         <div className="flex flex-col gap-y-5 max-w-5xl flex-1">
           <h1 className="font-medium md:font-semibold tracking-wide text-4xl md:text-5xl lg:text-6xl  md:!leading-[60px] lg:!leading-[70px] xl:!leading-[85px]">
