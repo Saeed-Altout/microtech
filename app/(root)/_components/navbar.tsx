@@ -29,7 +29,7 @@ export const Navbar = () => {
         isScrolled && "border-b shadow-sm"
       )}
     >
-      <div className="flex items-center justify-between w-full max-w-screen-xl mx-auto px-4">
+      <div className="flex items-center justify-between container">
         <Logo className="w-32" />
         <NavigationMenu className="hidden md:block">
           <NavigationMenuList>

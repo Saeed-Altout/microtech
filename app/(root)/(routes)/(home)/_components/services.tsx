@@ -5,11 +5,11 @@ import { Heading } from "@/components/common/heading";
 
 export const ServicesSection = () => {
   return (
-    <div
+    <section
       id="services"
       className="bg-secondary dark:bg-primary-foreground w-full py-20"
     >
-      <div className="w-full max-w-screen-xl mx-auto px-4">
+      <div className="container">
         <Heading
           title="Services"
           description="Unleash the potential of your business with MicroTech Solutions. As a new entrant, we bring fresh energy and a unique perspective to the world of digital design and development."
@@ -26,6 +26,6 @@ export const ServicesSection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
