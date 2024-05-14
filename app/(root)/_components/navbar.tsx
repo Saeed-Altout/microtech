@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 
 import {
@@ -18,12 +17,18 @@ import { Logo } from "@/components/common/logo";
 import { routes } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "@/components/ui/mode-toggle";
+import { useScrollTop } from "@/hooks/use-scroll-top";
 
 export const Navbar = () => {
-  const pathname = usePathname();
+  const { isScrolled } = useScrollTop(300);
 
   return (
-    <div className="fixed top-0 z-20 bg-background w-full h-16 border-b shadow-sm flex justify-between items-center">
+    <div
+      className={cn(
+        "fixed top-0 z-20 bg-background w-full h-16 flex justify-between items-center transition-all",
+        isScrolled && "border-b shadow-sm"
+      )}
+    >
       <div className="flex items-center justify-between w-full max-w-screen-xl mx-auto px-4">
         <Logo className="w-32" />
         <NavigationMenu className="hidden md:block">
