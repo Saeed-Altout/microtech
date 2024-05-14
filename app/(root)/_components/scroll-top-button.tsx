@@ -16,6 +16,7 @@ export const ScrollTopButton = () => {
         isScrolled && "opacity-100"
       )}
       size="icon"
+      onClick={() => scrollTo(0, 0)}
     >
       <ArrowUp className="h-5 w-5" />
     </Button>
