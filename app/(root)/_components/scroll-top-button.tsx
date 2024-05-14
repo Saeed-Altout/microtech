@@ -18,6 +18,7 @@ export const ScrollTopButton = () => {
       size="icon"
       onClick={() => scrollTo(0, 0)}
     >
+      <span className="sr-only">Scroll top</span>
       <ArrowUp className="h-5 w-5" />
     </Button>
   );

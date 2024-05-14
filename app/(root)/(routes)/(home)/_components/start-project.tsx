@@ -14,9 +14,9 @@ export const StartProjectSection = () => {
       className="bg-secondary dark:bg-primary-foreground py-20"
     >
       <div className="flex flex-col gap-2 text-center lg:max-w-6xl container">
-        <h3 className="text-2xl md:text-3xl">
+        <h2 className="text-2xl md:text-3xl">
           Embark on an exciting journey of creativity and accomplishment with us
-        </h3>
+        </h2>
         <p>
           Combining the power of design, engineering, and project management to
           create transformation digital experiences. They invite you to join

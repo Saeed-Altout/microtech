@@ -10,7 +10,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "",
+  description: "Home Page",
 };
 
 export default function HomePage() {
