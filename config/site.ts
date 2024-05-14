@@ -20,11 +20,6 @@ export const routes = [
     href: "/",
     pathname: "/",
   },
-  // {
-  //   label: "contact us",
-  //   href: "/contact-us",
-  //   pathname: "/contact-us",
-  // },
   {
     label: "about",
     href: "/#about",
@@ -34,6 +29,11 @@ export const routes = [
     label: "services",
     href: "/#services",
     pathname: "/#services",
+  },
+  {
+    label: "contact us",
+    href: "/#contact-us",
+    pathname: "/#contact-us",
   },
 ];
 
