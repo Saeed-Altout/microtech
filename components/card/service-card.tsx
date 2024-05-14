@@ -17,7 +17,7 @@ export const ServiceCard = ({
     <Card>
       <CardHeader>
         <Image src={image} alt={title} width={60} />
-        <CardTitle className="pt-2 font-medium">{title}</CardTitle>
+        <CardTitle className="pt-2 font-medium leading-8">{title}</CardTitle>
       </CardHeader>
       <CardContent>
         <p>{description}</p>
