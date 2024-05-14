@@ -83,4 +83,8 @@ body,
   .container {
     @apply w-full !max-w-screen-xl mx-auto px-4;
   }
+
+  p {
+    @apply leading-8 tracking-wide;
+  }
 }
