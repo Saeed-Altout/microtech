@@ -52,7 +52,7 @@ export const ContactForm = () => {
   const onSubmit = async (values: z.infer<typeof contactSchema>) => {
     try {
       setIsLoading(true);
-      await axios.post("user/send_message", values);
+      await axios.post(`${process.env.NEXT_PUBLIC_SEND_MESSAGE}`, values);
       toast.success("Success");
       router.refresh();
     } catch (error) {

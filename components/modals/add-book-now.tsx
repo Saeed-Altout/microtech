@@ -12,7 +12,6 @@ import * as z from "zod";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -50,11 +49,13 @@ export const AddBookNow = () => {
   const onSubmit = async (values: z.infer<typeof bookNowSchema>) => {
     try {
       setIsLoading(true);
-      await axios.post("user/send_message", values);
+      await axios.post(`${process.env.NEXT_PUBLIC_SEND_MESSAGE}`, values);
       toast.success("Success!");
       onCancel();
     } catch (error) {
-      toast.error("Something went wrong!");
+      if (error instanceof AxiosError) {
+        toast.error(error?.response?.data?.message || "Something went wrong!");
+      }
     } finally {
       setIsLoading(false);
     }
