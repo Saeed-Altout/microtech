@@ -1,5 +1,6 @@
 import { Navbar } from "./_components/navbar";
 import { Footer } from "./_components/footer";
+import { ScrollTopButton } from "./_components/scroll-top-button";
 
 import { AddBookNowProvider } from "@/providers/add-book-now-provider";
 
@@ -13,6 +14,7 @@ export default function RootLayout({
       <header>
         <Navbar />
       </header>
+      <ScrollTopButton />
       <main className="flex-1 pt-16">
         {children} <AddBookNowProvider />
       </main>
