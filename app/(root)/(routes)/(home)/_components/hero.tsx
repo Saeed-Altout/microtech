@@ -58,6 +58,15 @@ export const HeroSection = () => {
           height={400}
           src="./hero.svg"
           alt="Image Hero"
+          className="block dark:hidden"
+        />
+        <Image
+          priority
+          width={400}
+          height={400}
+          src="./hero-dark.svg"
+          alt="Image Hero"
+          className="hidden dark:block"
         />
       </div>
     </section>
