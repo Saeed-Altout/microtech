@@ -21,6 +21,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Modal } from "@/components/ui/modal";
+import { Spinner } from "@/components/ui/spinner";
 
 import { useAddBookNow } from "@/hooks/use-add-book-now";
 import { bookNowSchema } from "@/schemas";
@@ -134,7 +135,7 @@ export const AddBookNow = () => {
               Cancel
             </Button>
             <Button disabled={isLoading} type="submit">
-              Send
+              Send {isLoading && <Spinner className="text-background ml-2" />}
             </Button>
           </div>
         </form>
