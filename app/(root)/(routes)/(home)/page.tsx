@@ -10,7 +10,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "Home Page",
+  description:
+    "MicroTech is your dedicated partner in transforming ideas into powerful digital experiences. As a leading application design and development company, we specialize in creating customized, cutting-edge solutions to propel your business forward. Discover our expertise today",
 };
 
 export default function HomePage() {
